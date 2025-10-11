@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #b71823;
+  --color-accent: #24852f;
+  --color-bg: #ffffff;
+  --color-text: #24852f;
+  --color-muted: #24852f;
+  --font-family-base: 'Inter', 'Helvetica Neue', sans-serif;
+  --border-radius: 12px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+.section-card {
+  @apply bg-white/80 backdrop-blur border border-emerald-200/50 rounded-xl shadow-soft transition-all duration-300;
+}
+
+.section-card:hover {
+  @apply shadow-lg shadow-red-400/30 translate-y-[-2px];
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-primary) 60%, white);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#__next,
+body,
+html {
+  min-height: 100%;
+}
+
+main {
+  padding-bottom: 7rem;
+}
