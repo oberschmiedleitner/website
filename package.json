@@ -1,0 +1,14 @@
+{
+  "name": "radio-volare",
+  "version": "1.0.0",
+  "description": "Moderne, barrierearme Radio-Website für Radio Volare.",
+  "type": "module",
+  "scripts": {
+    "generate:env": "node scripts/generate-env.cjs",
+    "serve": "node scripts/serve.mjs",
+    "start": "npm run generate:env && npm run serve"
+  },
+  "keywords": ["radio", "accessibility", "stream", "italian"],
+  "author": "",
+  "license": "MIT"
+}

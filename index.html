@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radio Volare – Il tuo momento italiano</title>
+    <meta
+      name="description"
+      content="Radio Volare liefert italienische Musik, Kultur und Stories direkt nach Hause – modern, barrierearm und mobil optimiert."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Direkt zum Inhalt</a>
+    <header class="site-header" aria-label="Hauptnavigation">
+      <div class="header-inner">
+        <a class="brand" href="#hero" aria-label="Radio Volare Startseite">
+          <span class="brand-mark" aria-hidden="true">◎</span>
+          <span class="brand-text">
+            <span class="brand-name">Radio Volare</span>
+            <span class="brand-tagline">Il tuo momento italiano</span>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-label">Menü</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav
+          id="primary-navigation"
+          class="site-nav"
+          aria-label="Hauptnavigation"
+          aria-expanded="false"
+        >
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#program">Programm</a></li>
+            <li><a href="#shows">Sendungen</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="presentation" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Live aus der Schweiz</p>
+          <h1 id="hero-title">Radio Volare – dein italienisches Lebensgefühl, überall.</h1>
+          <p class="lead">
+            Tauche ein in mediterrane Sounds, News aus Bella Italia und Stories der
+            Community. Radio Volare sendet 24/7 in glasklarer Qualität.
+          </p>
+          <div class="hero-actions">
+            <button class="play-button" data-action="toggle-play" aria-pressed="false">
+              <span class="play-icon" aria-hidden="true"></span>
+              <span class="play-label">Livestream starten</span>
+            </button>
+            <a class="secondary-button" href="#program">Zum Tagesprogramm</a>
+          </div>
+          <dl class="now-playing" aria-live="polite">
+            <div>
+              <dt>Jetzt läuft</dt>
+              <dd id="now-playing-track">Wird geladen …</dd>
+            </div>
+            <div>
+              <dt>Moderator*in</dt>
+              <dd id="now-playing-host">Team Volare</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-player">
+          <div class="player-card" role="group" aria-label="Livestream Audio Player">
+            <audio id="radio-player" preload="none" aria-describedby="stream-note"></audio>
+            <p id="stream-note">Livestream in AAC (128 kbps)</p>
+            <div class="player-controls">
+              <button class="player-button" data-action="player-play" aria-pressed="false">
+                ▶︎
+                <span class="visually-hidden">Wiedergabe</span>
+              </button>
+              <button class="player-button" data-action="player-stop">
+                ■
+                <span class="visually-hidden">Stopp</span>
+              </button>
+              <label class="volume-label" for="volume">
+                Lautstärke
+                <input id="volume" type="range" min="0" max="1" step="0.05" value="0.75" />
+              </label>
+            </div>
+            <div class="player-meta">
+              <span class="player-status" id="player-status" role="status" aria-live="polite">Bereit</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="program" class="section program" aria-labelledby="program-title">
+        <div class="section-header">
+          <p class="eyebrow">Programm</p>
+          <h2 id="program-title">Dein Tag mit Radio Volare</h2>
+          <p class="section-lead">
+            Von Espresso am Morgen bis Aperitivo am Abend – so klingt ein Tag bei uns.
+            Die Struktur orientiert sich an vintageradio.ch, kuratiert für Radio Volare.
+          </p>
+        </div>
+        <div class="schedule">
+          <article class="schedule-block">
+            <h3>06:00 – 10:00 · Buongiorno Volare</h3>
+            <p>
+              Aktuelle Nachrichten, Verkehr &amp; Wetter mit italienischen Klassikern – der
+              perfekte Start in den Tag.
+            </p>
+          </article>
+          <article class="schedule-block">
+            <h3>10:00 – 14:00 · Volare Magazine</h3>
+            <p>
+              Interviews, Lifestyle und Tipps rund um Kultur, Kulinarik und Reisen.
+            </p>
+          </article>
+          <article class="schedule-block">
+            <h3>14:00 – 18:00 · Pomeriggio Live</h3>
+            <p>
+              Die Community-Sendung mit Live-Schaltungen nach Italien und Wunschkonzerten.
+            </p>
+          </article>
+          <article class="schedule-block">
+            <h3>18:00 – 22:00 · Aperitivo Club</h3>
+            <p>
+              Lounge, Italo-Disco &amp; DJ-Sets für den perfekten Feierabend.
+            </p>
+          </article>
+          <article class="schedule-block">
+            <h3>22:00 – 06:00 · Notte Stellata</h3>
+            <p>
+              Ruhige Balladen und neue Releases für die Nacht – begleitet von City Lights.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="shows" class="section shows" aria-labelledby="shows-title">
+        <div class="section-header">
+          <p class="eyebrow">Sendungen</p>
+          <h2 id="shows-title">Stimmen &amp; Formate</h2>
+          <p class="section-lead">
+            Lerne die Gesichter hinter Radio Volare kennen. Alle Formate orientieren sich am
+            Flow von vintageradio.ch und führen dich nahtlos durchs Programm.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Casa Volare</h3>
+            <p>
+              Magazin mit Live-Musik, Interviews und Publikumsschaltungen direkt aus unserem
+              Studio in Lugano.
+            </p>
+            <a class="card-link" href="#contact">Zur Redaktion</a>
+          </article>
+          <article class="card">
+            <h3>Italo Stories</h3>
+            <p>
+              Wöchentliche Reportagen über italienische Pionier*innen, Startups und Kultur.
+            </p>
+            <a class="card-link" href="#podcasts">Jetzt anhören</a>
+          </article>
+          <article class="card">
+            <h3>Volare Charts</h3>
+            <p>
+              Deine beliebtesten Songs und Neuentdeckungen, moderiert von Giulia Conti.
+            </p>
+            <a class="card-link" href="#program">Zur Sendezeit</a>
+          </article>
+          <article class="card">
+            <h3>Notturno Live</h3>
+            <p>
+              Ambient und elektronische Sets – live gemixt von wechselnden italienischen DJs.
+            </p>
+            <a class="card-link" href="#events">Nächster Gig</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="podcasts" class="section podcasts" aria-labelledby="podcasts-title">
+        <div class="section-header">
+          <p class="eyebrow">Podcasts &amp; On-Demand</p>
+          <h2 id="podcasts-title">Alles zum Nachhören</h2>
+          <p class="section-lead">
+            Bleib flexibel: Lade Sendungen herunter oder höre sie direkt im Browser – so wie auf
+            vintageradio.ch.
+          </p>
+        </div>
+        <div class="podcast-list" role="list">
+          <article class="podcast-item" role="listitem">
+            <div>
+              <h3>Volare Stories</h3>
+              <p>Storytelling aus Italien – neue Folge jeden Donnerstag.</p>
+            </div>
+            <a class="secondary-button" href="#" aria-label="Volare Stories anhören">Play</a>
+          </article>
+          <article class="podcast-item" role="listitem">
+            <div>
+              <h3>Sapori d'Italia</h3>
+              <p>Kochen, Kulinarik und Food-Trends aus allen Regionen.</p>
+            </div>
+            <a class="secondary-button" href="#" aria-label="Sapori d'Italia anhören">Play</a>
+          </article>
+          <article class="podcast-item" role="listitem">
+            <div>
+              <h3>Italo Innovatori</h3>
+              <p>Tech und Unternehmertum zwischen Mailand und Zürich.</p>
+            </div>
+            <a class="secondary-button" href="#" aria-label="Italo Innovatori anhören">Play</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="events" class="section events" aria-labelledby="events-title">
+        <div class="section-header">
+          <p class="eyebrow">Events</p>
+          <h2 id="events-title">Triff Radio Volare live</h2>
+          <p class="section-lead">
+            Community-Events und Livestream-Specials – identisch strukturiert wie bei unserem
+            Vorbild, aber mit Volare-Flair.
+          </p>
+        </div>
+        <div class="event-grid">
+          <article class="event-card">
+            <h3>Volare Aperitivo – Zürich</h3>
+            <p>Live-DJ-Set &amp; Meet the Team im Sommergarten. 12. Juli, 18:00 Uhr.</p>
+            <a class="card-link" href="#contact">Jetzt anmelden</a>
+          </article>
+          <article class="event-card">
+            <h3>Notturno Rooftop – Lugano</h3>
+            <p>Elektronische Nacht mit Gästen aus Mailand. 3. August, 21:00 Uhr.</p>
+            <a class="card-link" href="#contact">Tickets sichern</a>
+          </article>
+          <article class="event-card">
+            <h3>Volare Cultura – Bern</h3>
+            <p>Talk &amp; Live-Podcast zum Thema Kulturtransfer. 24. September, 19:30 Uhr.</p>
+            <a class="card-link" href="#contact">Weitere Infos</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="support" class="section support" aria-labelledby="support-title">
+        <div class="section-header">
+          <p class="eyebrow">Support</p>
+          <h2 id="support-title">Radio Volare unterstützen</h2>
+          <p class="section-lead">
+            Mit deinem Beitrag ermöglichen wir unabhängigen Journalismus und Kulturförderung.
+          </p>
+        </div>
+        <div class="support-grid">
+          <article class="support-card">
+            <h3>Mitglied werden</h3>
+            <p>Exklusive Inhalte und Einladungen zu privaten Sessions.</p>
+            <a class="secondary-button" href="#contact">Jetzt beitreten</a>
+          </article>
+          <article class="support-card">
+            <h3>Spenden</h3>
+            <p>Unterstütze die Infrastruktur des Senders mit einer einmaligen Spende.</p>
+            <a class="secondary-button" href="#contact">Spenden</a>
+          </article>
+          <article class="support-card">
+            <h3>Werben</h3>
+            <p>Passgenaue Kampagnen und Sponsorings für dein Unternehmen.</p>
+            <a class="secondary-button" href="#contact">Media Kit anfordern</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="section-header">
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="contact-title">So erreichst du uns</h2>
+          <p class="section-lead">
+            Ob Musikwunsch, Event-Idee oder Kooperation – wir freuen uns auf deine Nachricht.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" aria-label="Kontaktformular">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="topic">Thema</label>
+              <select id="topic" name="topic">
+                <option>Allgemeine Anfrage</option>
+                <option>Musikwunsch</option>
+                <option>Event</option>
+                <option>Kooperation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="primary-button" type="submit">Nachricht senden</button>
+          </form>
+          <aside class="contact-details">
+            <h3>Studio &amp; Redaktion</h3>
+            <p>
+              Radio Volare<br />
+              Via del Sole 21<br />
+              6900 Lugano
+            </p>
+            <p>
+              <a href="tel:+41911223344">+41 91 122 33 44</a><br />
+              <a href="mailto:ciao@radiovolare.ch">ciao@radiovolare.ch</a>
+            </p>
+            <div class="contact-social">
+              <a href="#" aria-label="Radio Volare auf Instagram">Instagram</a>
+              <a href="#" aria-label="Radio Volare auf Facebook">Facebook</a>
+              <a href="#" aria-label="Radio Volare auf YouTube">YouTube</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">◎</span>
+          <span>Radio Volare</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Links">
+          <a href="#program">Programm</a>
+          <a href="#podcasts">Podcasts</a>
+          <a href="#events">Events</a>
+          <a href="#support">Support</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+        <p class="footer-meta">© <span id="year"></span> Radio Volare. Alle Rechte vorbehalten.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/env.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
